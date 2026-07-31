@@ -650,38 +650,3 @@ main{ position: relative; z-index: 2; }
 .typed-cursor, .cursor {
   display: none !important;
 }
-/* --- CURSOR GLOW EFFECT (style.css के अंत में) --- */
-body {
-    position: relative;
-    overflow-x: hidden; /* Prevent horizontal scroll */
-}
-
-#cursor-glow {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(0, 162, 255, 0.12) 0%, rgba(0, 0, 0, 0) 70%);
-    border-radius: 50%;
-    pointer-events: none; /* User clicking me interfere na kare */
-    z-index: -1; /* Background grid ke upar, content ke neeche */
-    transform: translate(-50%, -50%);
-    transition: width 0.3s ease, height 0.3s ease, background 0.3s ease;
-}
-
-/* Mobile par glow thoda chota */
-@media (max-width: 768px) {
-    #cursor-glow {
-        width: 300px;
-        height: 300px;
-        background: radial-gradient(circle, rgba(0, 162, 255, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
-    }
-}
-/* Card Hover Effect */
-.project-card:hover, .skill-item:hover, div[class*="card"]:hover {
-    transform: translateY(-5px) !important;
-    border-color: rgba(0, 162, 255, 0.6) !important;
-    box-shadow: 0 10px 40px -10px rgba(0, 162, 255, 0.3) !important;
-    transition: all 0.3s ease !important;
-}
