@@ -685,3 +685,12 @@ body {
     box-shadow: 0 10px 40px -10px rgba(0, 162, 255, 0.3) !important;
     transition: all 0.3s ease !important;
 }
+/* SCROLL text aur line ko 100% hide karne ke liye */
+.scroll-text, 
+.scroll-line, 
+.scroll-indicator, 
+.scroll-down {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
