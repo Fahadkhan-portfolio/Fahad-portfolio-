@@ -622,13 +622,6 @@ main{ position: relative; z-index: 2; }
 @media (prefers-reduced-motion: reduce){
   *{ animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
   html{ scroll-behavior: auto; }
-}
-
-.reveal, [data-reveal], div, section, p, h1, h2, h3, span {
-  opacity: 1 !important;
-  transform: none !important;
-  visibility: visible !important
-}
 .contact-card, a[href^="mailto"] {
   word-break: break-all;
   font-size: 14px !important;
