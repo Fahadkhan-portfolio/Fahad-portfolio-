@@ -178,15 +178,3 @@ window.addEventListener("load", function() {
     }, 1500); // 1.5 seconds baad loader gaayab ho jayega
   }
 });
-// --- CURSOR GLOW MOVEMENT (script.js के अंत में) ---
-const glow = document.getElementById('cursor-glow');
-
-if (glow) {
-    window.addEventListener('mousemove', (e) => {
-        const x = e.clientX;
-        const y = e.clientY;
-        
-        glow.style.left = `${x}px`;
-        glow.style.top = `${y}px`;
-    });
-}
