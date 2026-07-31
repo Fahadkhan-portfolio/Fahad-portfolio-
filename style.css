@@ -678,3 +678,10 @@ body {
         background: radial-gradient(circle, rgba(0, 162, 255, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
     }
 }
+/* Card Hover Effect */
+.project-card:hover, .skill-item:hover, div[class*="card"]:hover {
+    transform: translateY(-5px) !important;
+    border-color: rgba(0, 162, 255, 0.6) !important;
+    box-shadow: 0 10px 40px -10px rgba(0, 162, 255, 0.3) !important;
+    transition: all 0.3s ease !important;
+}
