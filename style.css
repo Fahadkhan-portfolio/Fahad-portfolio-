@@ -685,39 +685,3 @@ body {
     box-shadow: 0 10px 40px -10px rgba(0, 162, 255, 0.3) !important;
     transition: all 0.3s ease !important;
 }
-/* SCROLL text aur line ko 100% hide karne ke liye */
-.scroll-text, 
-.scroll-line, 
-.scroll-indicator, 
-.scroll-down {
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-}
-/* Clean Mobile Fix */
-body {
-    background-color: #0b0f19 !important;
-    color: #ffffff !important;
-}
-
-.nav-toggle, .menu-toggle, .hamburger {
-    color: #ffffff !important;
-    z-index: 99;
-}
-
-.nav-toggle span, .menu-toggle span, .hamburger span {
-    background-color: #ffffff !important;
-} 
-@media (max-width: 768px) {
-    .nav-links.active, .nav-menu.active {
-        display: flex !important;
-        flex-direction: column !important;
-        position: absolute !important;
-        top: 60px !important;
-        right: 20px !important;
-        background: #111827 !important;
-        padding: 15px !important;
-        border-radius: 8px !important;
-        border: 1px solid #1f2937 !important;
-    }
-    
