@@ -694,24 +694,30 @@ body {
     opacity: 0 !important;
     visibility: hidden !important;
 }
-/* Mobile Menu Icon Fix */
-.nav-toggle, 
-.menu-toggle, 
-.hamburger, 
-.mobile-nav-toggle {
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    z-index: 9999 !important;
+/* Clean Mobile Fix */
+body {
+    background-color: #0b0f19 !important;
     color: #ffffff !important;
 }
 
-.nav-toggle span, 
-.menu-toggle span, 
-.hamburger span {
-    background-color: #ffffff !important;
-    display: block !important;
-    height: 2px !important;
-    width: 25px !important;
-    margin: 4px 0 !important;
+.nav-toggle, .menu-toggle, .hamburger {
+    color: #ffffff !important;
+    z-index: 99;
 }
+
+.nav-toggle span, .menu-toggle span, .hamburger span {
+    background-color: #ffffff !important;
+} 
+@media (max-width: 768px) {
+    .nav-links.active, .nav-menu.active {
+        display: flex !important;
+        flex-direction: column !important;
+        position: absolute !important;
+        top: 60px !important;
+        right: 20px !important;
+        background: #111827 !important;
+        padding: 15px !important;
+        border-radius: 8px !important;
+        border: 1px solid #1f2937 !important;
+    }
+    
