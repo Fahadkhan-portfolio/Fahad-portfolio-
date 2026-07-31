@@ -170,3 +170,11 @@ document.addEventListener('DOMContentLoaded', () => {
   sections.forEach(sec => sectionObserver.observe(sec));
 
 });
+window.addEventListener("load", function() {
+  const loader = document.querySelector(".loader") || document.querySelector("#loader") || document.querySelector("#preloader");
+  if (loader) {
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 1500); // 1.5 seconds baad loader gaayab ho jayega
+  }
+});
