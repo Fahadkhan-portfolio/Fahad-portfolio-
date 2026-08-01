@@ -178,3 +178,16 @@ window.addEventListener("load", function() {
     }, 1500); // 1.5 seconds baad loader gaayab ho jayega
   }
 });
+/* Mobile Menu Toggle Fix */
+document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.querySelector('.nav-toggle, .menu-toggle, .hamburger');
+    const navLinks = document.querySelector('.nav-links, .nav-menu');
+
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navLinks.classList.toggle('open');
+            navLinks.classList.toggle('active');
+        });
+    }
+});
