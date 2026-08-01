@@ -683,3 +683,13 @@ main{ position: relative; z-index: 2; }
     transform: translateY(0px) scale(0.98) !important;
     box-shadow: 0 0 10px rgba(59, 130, 246, 0.8) !important;
 }
+/* Enhanced Mobile Tap & Movement Feel */
+.btn:active, 
+.hero-actions a:active, 
+button:active, 
+.contact-card:active, 
+.project-card:active, 
+.service-card:active {
+    transform: translateY(6px) scale(0.92) !important;
+    transition: transform 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
